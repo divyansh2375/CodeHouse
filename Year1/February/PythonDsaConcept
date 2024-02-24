@@ -1,0 +1,96 @@
+19-23 College St exams were Going 
+
+------------------------
+Date - 24 February 2024
+------------------------
+
+   # page -7 (self)
+# Class 
+# A class is a blueprint for the object.
+# Object 
+# An object (instance) is an instantiation of a class. When class is defined, only the description for the object 
+# is defined
+
+
+class Parrot:
+  def __init__(self , name ,age) :
+    self.name = name 
+    self.age = age
+  pass 
+
+blu = Parrot("Blue", 10) #1.jab ye banaya tab ek consturctor call hua uske andar ek khud ka init ka function hoga jo self me sab value leta hoga fir wha value likhba rhe honge apan log 
+woo = Parrot("woo" , 15)
+
+print(blu.name)
+print(blu.age)
+
+
+  #page 7  (real)
+#----------------------------
+class Parrot: 
+ # class attribute 
+ species = "bird" 
+
+  
+ # instance attribute 
+ def __init__(self, name, age): 
+  self.name = name 
+  self.age = age 
+
+
+# instantiate the Parrot class 
+blu = Parrot("Blu", 10) 
+woo = Parrot("Woo", 15)
+
+
+# access the class attributes 
+print("Blu is a {}".format(blu.__class__.species)) 
+print("Woo is also a {}".format(woo.__class__.species))
+
+
+# access the instance attributes 
+print("{} is {} years old".format( blu.name, blu.age)) 
+print("{} is {} years old".format( woo.name, woo.age))
+#attributes are the characterstics of the object
+
+#------------------------------------
+# constructor 
+# The constructor is a method that is called when an object is created. This method is defined in the class and 
+# can be used to initialize basic variables. 
+
+# 1. start
+# 2. create object
+# 3. call constructor
+# 4. return
+
+class Human:
+  legs = 2
+  def _init_(self):
+    self.legs = 2
+    self.arms = 2
+
+bob = Human() 
+print(bob.legs) 
+
+# The newly created object now has the variables set, without you having to define them manually. You could 
+# create tens or hundreds of objects without having to set the values each time.
+
+# The function init(self) builds your object. Its not just variables you can set here, you can call class methods 
+# too. Everything you need to initialize the object(s). 
+
+class Plane:
+  def _init_(self): 
+    self.wings = 2
+# fly
+    self.drive() 
+    self.flaps() 
+    self.wheels() 
+    
+  def drive(self): 
+   print('Accelerating') 
+  def flaps(self): 
+   print('Changing flaps')
+  def wheels(self): 
+   print('Closing wheels')
+    
+ba = Plane() 
